@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CYV Gijón</title>
+    <link rel="stylesheet" href="/estilos.css">
+</head>
+<body>
+
+    <!-- Encabezado con logo y menú de navegación -->
+    <header>
+        <h1>CYV Gijón</h1>
+        <ul class="navegacion">
+            <img src="/assets/logo_coche.svg" alt="logo_coche">
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/views/productos.html">Productos</a></li>
+            <li><a href="/views/contacto.html">Contacto</a></li>
+            <li><a href="/views/presupuesto.html" class="activo">Presupuesto</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="presupuesto">
+            <h1>Solicitar presupuesto</h1>
+            
+            <!--Formulario-->
+            <form>
+                <label>Nombre:</label>
+                <input type="text" required>
+
+                <label>E-mail:</label>
+                <input type="email" required>
+
+                <label>Teléfono:</label>
+                <input type="tel" required>
+
+                <label>Solicitar información:</label>
+                <textarea required></textarea>
+
+                <label class="checkbox">
+                <input type="checkbox" required>Acepto la política de privacidad
+                </label>
+
+                <button type="submit">Enviar</button>
+
+            </form>
+        </section>
+        
+    </main>
+    
+    <!-- Pie de página -->
+    <footer>
+        <p>2025 Compra y venta coches - Compraventa coches de segunda mano</p>
+        <img src="/assets/logo_facebook.svg" alt="logo_facebook">
+        <img src="/assets/logo_instagram.svg" alt="logo_instagram">
+        <img src="/assets/logo_whatsapp.svg" alt="logo_whatsapp">
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,280 @@
+/* RESSET */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    color: #363535;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+main {
+    flex: 1;
+}
+
+/* HEADER */
+header {
+    background-color: #7F2E33;
+    box-shadow: 0px 2px 8px  rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    
+
+}
+
+header h1 {
+    color: #d6d5d5;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+header img {
+    color: #d6d5d5;
+    
+}
+
+/* NAVEGACIÓN */
+.navegacion {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.1rem;
+}
+
+.navegacion a {
+    text-decoration: none;
+    color: #222222;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.navegacion a:hover {
+    background-color: #01102015;
+    color:white;
+}
+
+.activo {
+    background:#9B4A4F;
+    color: white;
+}
+
+.bienvenida {
+    background-color: #d6d5d5;
+    text-align: center;
+    padding: 6rem 2rem;
+    border-radius: 14px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+/* SECCIÓN BIENVENIDA */
+.bienvenida h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.bienvenida p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.2rem;
+    opacity: 9;
+}
+
+/* SERVICIOS */
+.servicios h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem
+}
+
+.grid_servicios {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.servicio {
+    background-color: #B98183;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0.08);
+    font-weight: 500;
+    transition: .25s;
+}
+
+/* SOBRE NOSOTROS */
+.sobre_nosotros {
+    background-color: white;
+    border-left: 8px solid #7F2E33;
+    padding: 2rem 2.5rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgb(0, 0, 0.07);
+    margin-top: 1rem;
+}
+
+.sobre_nosotros h2 {
+    margin-bottom: 1rem;
+}
+
+/* PRODUCTOS */
+.grid_productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.contenedor_productos {
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgb(0, 0, 0.07);
+    transition: .25s;
+}
+
+.contenedor_productos h1 {
+    margin-bottom: 2rem;
+}
+
+
+.contenedor_productos img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: .5rem;
+}
+
+.contenedor_productos :hover {
+    transform: translateY(-6px);
+} 
+
+/* FORMULARIO */
+.presupuesto h1 {
+    text-align: center;
+    margin-bottom: 2rem ;
+    margin-top: 1rem;
+}
+
+form{
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, textarea {
+    padding: 1rem;
+    border: 1px solid #7F2E33 ;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: .2s;
+}
+
+input:focus, 
+    textarea:focus {
+        border-color: #2E5F7E;
+    }
+
+button {
+    padding: 1rem;
+    background-color: #7F2E33;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .25s;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #9B4A4F;
+}
+
+.checkbox {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+/* CONTACTO */
+.contacto h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contacto {
+    margin: 2rem;
+}
+
+
+.info_contacto {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info {
+    flex: 1;
+}
+
+.mapa {
+    margin: 1rem;
+
+
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: #f9f9f9;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+footer img {
+    width: 25px;
+    margin: 0 8px;
+    vertical-align: middle;
+    opacity: 0.8;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+footer img:hover {
+    opacity: 7;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .grid_servicios,
+    .grid_productos {
+        grid-template-columns: 1fr;
+    }
+
+
+    .contacto-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bienvenida h1 {
+        font-size: 2rem;
+    }
+}
