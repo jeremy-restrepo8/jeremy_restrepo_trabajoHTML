@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>CYV Gijón</title>
-    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
 
@@ -13,7 +13,7 @@
     <header>
         <h1>CYV Gijón</h1>
         <ul class="navegacion">
-            <img src="../assets/logo_coche.svg" alt="logo_coche">
+            <li><img src="../assets/logos/logo_coche.svg" alt="logo_coche"></li>
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="productos.html">Productos</a></li>
             <li><a href="contacto.html">Contacto</a></li>
@@ -22,18 +22,18 @@
     </header>
     <main>
         <section class="presupuesto">
-            <h1>Solicitar presupuesto</h1>
+            <h2>Solicitar presupuesto</h2>
             
             <!--Formulario-->
             <form>
                 <label>Nombre:</label>
-                <input type="text" required>
+                <input type="text" required pattern="[A-Za-z ]+">
 
                 <label>E-mail:</label>
-                <input type="email" required>
+                <input type="email" required pattern=".+@.+\..+">
 
                 <label>Teléfono:</label>
-                <input type="tel" required>
+                <input type="tel" required pattern="[0-9]+">
 
                 <label>Solicitar información:</label>
                 <textarea required></textarea>
@@ -52,9 +52,9 @@
     <!-- Pie de página -->
     <footer>
         <p>2025 Compra y venta coches - Compraventa coches de segunda mano</p>
-        <img src="../assets/logo_facebook.svg" alt="logo_facebook">
-        <img src="../assets/logo_instagram.svg" alt="logo_instagram">
-        <img src="../assets/logo_whatsapp.svg" alt="logo_whatsapp">
+        <img src="../assets/logos/logo_facebook.svg" alt="logo_facebook">
+        <img src="../assets/logos/logo_instagram.svg" alt="logo_instagram">
+        <img src="../assets/logos/logo_whatsapp.svg" alt="logo_whatsapp">
     </footer>
     
 </body>
