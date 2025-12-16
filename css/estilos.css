@@ -150,12 +150,17 @@ header img {
     margin-bottom: 2rem;
 }
 
-
 .contenedor_productos img {
     width: 100%;
     border-radius: 10px;
     margin-bottom: .5rem;
 }
+
+.imagenes_productos {
+    width: 400px;
+    height: 200px;
+}
+
 
 .contenedor_productos :hover {
     transform: translateY(-6px);
